@@ -5,6 +5,7 @@
 - python
 - uv
 - celery
+- fastapi
 - docker
 
 ## 시작하기
@@ -28,6 +29,19 @@ Worker 실행:
 uv run celery -A app.celery.large worker -l INFO
 ```
 
+API 서버 실행:
+
+```shell
+uv run fastapi dev ./app/server.py
+```
+
+테스트 API 호출
+
+```shell
+curl -X POST http://localhost:8000/enqueue
+```
+
 ## 참고
 
+- [FastAPI Document](https://fastapi.tiangolo.com/)
 - [Celery Document](https://docs.celeryq.dev/)

@@ -1,0 +1,10 @@
+[project]
+name = "celery-demo"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "celery>=5.4.0",
+    "fastapi[standard]>=0.115.12",
+]

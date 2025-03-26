@@ -1,0 +1,6 @@
+services:
+  broker:
+    container_name: broker
+    image: rabbitmq:4
+    ports:
+      - "5672:5672"

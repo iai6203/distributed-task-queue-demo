@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "worker:start": "dotenv -e .env.local -- tsx ./src/workers/example.worker.ts"
   },
   "dependencies": {
     "bullmq": "^5.44.4",
